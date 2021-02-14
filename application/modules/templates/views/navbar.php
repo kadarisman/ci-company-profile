@@ -58,9 +58,32 @@
                      <a class="nav-link js-scroll-trigger text-white"
                          href="<?= base_url('auth/Auth/Registrasi') ?>">Registrasi</a>
                  </li>
+                 <?php if (!$this->session->userdata('email')) {
+                    ?>
                  <li class="nav-item">
                      <a class="nav-link js-scroll-trigger text-white" href="<?= base_url('auth/Auth') ?>">Login</a>
                  </li>
+                 <?php } ?>
+                 <?php if ($user_session['level'] == 'admin') {
+                    ?>
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdown" role="button"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Data
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item btn3" href="<?= base_url('user/Admin') ?>">User
+                         </a>
+                         <div class="dropdown-divider"></div>
+                         <a class="dropdown-item btn3" href="<?= base_url('user/Admin/AllNilai') ?>">Nilai
+                         </a>
+                     </div>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger text-white" href="<?= base_url('auth/Auth/Logout') ?>">Log
+                         Out</a>
+                 </li>
+                 <?php } ?>
              </ul>
          </div>
      </div>

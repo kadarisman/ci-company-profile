@@ -48,7 +48,7 @@
         <script>
         document.write(new Date().getFullYear())
         </script> Copyright :
-        <a class="text-white" href="https://mdbootstrap.com/"> AGENT</a>
+        <a class="text-white" href="<?= base_url('blog/Blog') ?>"> AGENT</a>
     </div>
     <!-- Copyright -->
 </footer> <!-- Footer -->
@@ -60,6 +60,7 @@
 </script>
 
 <script src="<?= base_url('assets/') ?>js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url('assets/') ?>js/jquery.min.js"></script>
 
 <!-- Option 2: Separate Popper and Bootstrap JS -->
 <!--
@@ -70,3 +71,12 @@
 </body>
 
 </html>
+<script>
+$(document).ready(function() {
+    window.setTimeout(function() {
+        $("#msg").fadeTo(200, 0).slideUp(200, function() {
+            $(this).remove();
+        });
+    }, 3000);
+})
+</script>

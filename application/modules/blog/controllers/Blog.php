@@ -11,6 +11,7 @@ class Blog extends CI_Controller
     public function index()
     {
         $data['judul'] = 'Beranda';
+        $data['user_session'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navbar');
         $this->load->view('templates/banner');
@@ -21,6 +22,7 @@ class Blog extends CI_Controller
     public function Auriga()
     {
         $data['judul'] = 'Auriga';
+        $data['user_session'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navbar');
         $this->load->view('v_auriga');
@@ -30,6 +32,7 @@ class Blog extends CI_Controller
     public function Kursus()
     {
         $data['judul'] = 'Kursus';
+        $data['user_session'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navbar');
         $this->load->view('v_kursus');
@@ -39,6 +42,7 @@ class Blog extends CI_Controller
     public function Kalender()
     {
         $data['judul'] = 'Kalender';
+        $data['user_session'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navbar');
         $this->load->view('v_kalender');
@@ -48,6 +52,7 @@ class Blog extends CI_Controller
     public function Diskusi()
     {
         $data['judul'] = 'Diskusi';
+        $data['user_session'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navbar');
         $this->load->view('forum/v_diskusiDiForum');
@@ -57,6 +62,7 @@ class Blog extends CI_Controller
     public function Japri()
     {
         $data['judul'] = 'Japri';
+        $data['user_session'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navbar');
         $this->load->view('forum/v_japriTenagaAhli');
@@ -66,6 +72,7 @@ class Blog extends CI_Controller
     public function Kontak()
     {
         $data['judul'] = 'Kontak';
+        $data['user_session'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navbar');
         $this->load->view('v_kontak');
@@ -75,6 +82,7 @@ class Blog extends CI_Controller
     public function TenagaAhli()
     {
         $data['judul'] = 'Tenaga Ahli';
+        $data['user_session'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->load->view('templates/header', $data);
         $this->load->view('templates/navbar');
         $this->load->view('v_tenagaAhli');
