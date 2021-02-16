@@ -20,10 +20,12 @@ class User extends CI_Controller
         $this->load->view('templates/header', $data);
         if (!$this->session->userdata('language') or $this->session->userdata('language') == 'id') {
             $this->load->view('templates/navbar');
+            $this->load->view('v_nilaiUser', $data);
+            $this->load->view('templates/footer');
         } else {
-            $this->load->view('templates/navbar_eng');
+            $this->load->view('templates/eng/navbar_eng');
+            $this->load->view('v_nilaiUser', $data);
+            $this->load->view('templates/eng/footer_eng');
         }
-        $this->load->view('v_nilaiUser');
-        $this->load->view('templates/footer');
     }
 }
