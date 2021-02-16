@@ -17,9 +17,15 @@ class Admin extends CI_Controller
         $data['user_session'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
         $this->load->view('templates/header', $data);
-        $this->load->view('templates/navbar');
-        $this->load->view('v_allUser', $data);
-        $this->load->view('templates/footer');
+        if (!$this->session->userdata('language') or $this->session->userdata('language') == 'id') {
+            $this->load->view('templates/navbar');
+            $this->load->view('v_allUser', $data);
+            $this->load->view('templates/footer');
+        } else {
+            $this->load->view('templates/eng/navbar_eng');
+            $this->load->view('v_allUser', $data);
+            $this->load->view('templates/eng/footer_eng');
+        }
     }
 
     public function AllNilai()
@@ -29,9 +35,15 @@ class Admin extends CI_Controller
         $data['user_session'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
         $this->load->view('templates/header', $data);
-        $this->load->view('templates/navbar');
-        $this->load->view('v_allNilai', $data);
-        $this->load->view('templates/footer');
+        if (!$this->session->userdata('language') or $this->session->userdata('language') == 'id') {
+            $this->load->view('templates/navbar');
+            $this->load->view('v_allNilai', $data);
+            $this->load->view('templates/footer');
+        } else {
+            $this->load->view('templates/eng/navbar_eng');
+            $this->load->view('v_allNilai', $data);
+            $this->load->view('templates/eng/footer_eng');
+        }
     }
 
     public function InputNilai()
@@ -51,10 +63,10 @@ class Admin extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $errors = array(
-                'bidang_studi_error' => form_error('bidang_studi'),
-                'mata_pelajaran_error' => form_error('mata_pelajaran'),
-                'nilai_error' => form_error('nilai'),
-                'keterangan_error' => form_error('keterangan'),
+                'b_studi_error' => form_error('bidang_studi'),
+                'm_pelajaran_error' => form_error('mata_pelajaran'),
+                'n_error' => form_error('nilai'),
+                'k_error' => form_error('keterangan'),
             );
             echo json_encode(['error' => $errors]);
         } else {

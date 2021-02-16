@@ -1,5 +1,5 @@
 <style>
-a {
+.a1 a {
     color: darkolivegreen;
     font-size: 14px;
 }
@@ -8,7 +8,7 @@ a:hover {
     color: rgb(27, 158, 38);
 }
 </style>
-<div class="container" style="margin-top: 85px;">
+<div class="container a1" style="margin-top: 85px;">
     <div class="row">
         <div class="col-sm-8 col-md-9 shadow p-3 mb-5 bg-white rounded">
             <h2>Forum Diskusi</h2>
@@ -51,7 +51,7 @@ a:hover {
 
         <div class="col-md-3 col-sm-4 w-filter-">
             <div class="SearchBox-Title">
-                <h5 class="alike bg-success text-white p-1">Filter learning courses</h5>
+                <h5 class="alike bg-success text-white p-1">Filter kursus pembelajaran</h5>
             </div>
             <div class="SearchBox-Top">
                 <div class="input-group mb-3">
@@ -74,11 +74,11 @@ a:hover {
                 </ul>
             </div>
             <div class="SearchBox-SubTitle">
-                <strong>Filter by categories</strong>
+                <strong>Filter menurut kategori</strong>
             </div>
             <div class="SearchBox-Bottom">
                 <ul>
-                    <li><a href="/thematicarea" id="all_courses">All Courses</a></li>
+                    <li><a href="/thematicarea" id="all_courses">Semua Kursus</a></li>
                     <li><a href="/thematicarea?catalog=1" id="catalog_1">Enterprise Technology Services</a></li>
                     <li><a href="/thematicarea?catalog=2" id="catalog_2">Field Technology Solutions</a></li>
                     <li><a href="/thematicarea?catalog=3" id="catalog_3">IT Operational Management</a></li>
@@ -86,7 +86,7 @@ a:hover {
                 </ul>
             </div>
             <div class="SearchBox-SubTitle">
-                <strong>Filter by languages</strong>
+                <strong>Filter menurut bahasa</strong>
             </div>
             <div class="SearchBox-Bottom">
                 <ul>

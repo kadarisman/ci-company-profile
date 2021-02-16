@@ -1,5 +1,5 @@
 <style>
-a {
+.a1 a {
     color: darkolivegreen;
     font-size: 14px;
 }
@@ -8,7 +8,7 @@ a:hover {
     color: rgb(27, 158, 38);
 }
 </style>
-<div class="container" style="margin-top: 85px;">
+<div class="container a1" style="margin-top: 85px;">
     <div class="row">
         <div class="col-sm-6 shadow p-3 mb-5 bg-white rounded">
             <h2>Kontak Kami</h2>

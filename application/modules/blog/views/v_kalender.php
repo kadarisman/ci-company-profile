@@ -1,5 +1,5 @@
 <style>
-a {
+.a1 a {
     color: darkolivegreen;
     font-size: 14px;
 }
@@ -13,17 +13,17 @@ a:hover {
 
     </header>
 </div>
-<div class="container mt-5">
+<div class="container mt-5 a1">
     <div class="row">
         <div class="col-md-9 col-sm-8 w-course-search-list">
-            <span class="poppins">ONLINE COURSE</span>
+            <span class="poppins">KURSUS ONLINE</span>
 
             <hr>
             <div class="w-course-list ">
                 <div class="course-list-item">
                     <div class="row">
                         <div class="course-meta p-3">
-                            <h3>The Environmental & Social Risk Analysis (ESRA) Online Course</h3>
+                            <h3>Kursus Online Analisis Risiko Lingkungan & Sosial (ESRA)</h3>
                             <p class="poppins">
                             </p>
                             <p class="poppins">This coure is available upon request. <br> The ITIL 4 Managing
@@ -46,7 +46,7 @@ a:hover {
                 <div class="course-list-item">
                     <div class="row">
                         <div class="course-meta p-3">
-                            <h3>The Environmental & Social Risk Analysis (ESRA) Online Course</h3>
+                            <h3>Kursus Online Analisis Risiko Lingkungan & Sosial (ESRA)</h3>
                             <p class="poppins">
                             </p>
                             <p class="poppins">This coure is available upon request. <br> The ITIL 4 Managing
@@ -69,7 +69,7 @@ a:hover {
                 <div class="course-list-item">
                     <div class="row">
                         <div class="course-meta p-3">
-                            <h3>The Environmental & Social Risk Analysis (ESRA) Online Course</h3>
+                            <h3>Kursus Online Analisis Risiko Lingkungan & Sosial (ESRA)</h3>
                             <p class="poppins">
                             </p>
                             <p class="poppins">This coure is available upon request. <br> The ITIL 4 Managing
@@ -91,7 +91,7 @@ a:hover {
 
         <div class="col-md-3 col-sm-4 w-filter-">
             <div class="SearchBox-Title">
-                <h5 class="alike bg-success text-white p-1">Filter learning courses</h5>
+                <h5 class="alike bg-success text-white p-1">Filter kursus pembelajaran</h5>
             </div>
             <div class="SearchBox-Top">
                 <div class="input-group mb-3">
@@ -114,11 +114,11 @@ a:hover {
                 </ul>
             </div>
             <div class="SearchBox-SubTitle">
-                <strong>Filter by categories</strong>
+                <strong>Filter menurut kategori</strong>
             </div>
             <div class="SearchBox-Bottom">
                 <ul>
-                    <li><a href="/thematicarea" id="all_courses">All Courses</a></li>
+                    <li><a href="/thematicarea" id="all_courses">Semua Kursus</a></li>
                     <li><a href="/thematicarea?catalog=1" id="catalog_1">Enterprise Technology Services</a></li>
                     <li><a href="/thematicarea?catalog=2" id="catalog_2">Field Technology Solutions</a></li>
                     <li><a href="/thematicarea?catalog=3" id="catalog_3">IT Operational Management</a></li>
@@ -126,7 +126,7 @@ a:hover {
                 </ul>
             </div>
             <div class="SearchBox-SubTitle">
-                <strong>Filter by languages</strong>
+                <strong>Filter menurut bahasa</strong>
             </div>
             <div class="SearchBox-Bottom">
                 <ul>

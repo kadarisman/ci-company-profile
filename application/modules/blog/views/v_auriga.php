@@ -18,7 +18,7 @@ a:hover {
          </ol>
      </nav>
      <article>
-         <h3 class="page-title alike">The Technology Training Portal</h3>
+         <h3 class="page-title alike">Portal Pelatihan Teknologi</h3>
          <div class="article-">
              <p>
                  The Technology Training Portal offers digital e-learning solutions to UN Mission ICT professionals and
@@ -35,10 +35,8 @@ a:hover {
                  learner’s new expectations and needs.
              </p>
 
-             <h3 class="alike" style="color: white;background-color: rgb(27, 158, 38);   ;padding: 4px;">Civilian Staff
-                 and
-                 Uniformed Personnel
-                 Training</h3>
+             <h3 class="alike" style="color: white;background-color: rgb(27, 158, 38);   ;padding: 4px;">Pelatihan Staf
+                 Sipil dan Personil Berseragam</h3>
              <div class="row">
                  <div class="col-lg-12">
                      <p>
@@ -65,9 +63,8 @@ a:hover {
                  </div>
              </div>
 
-             <h3 class="alike" style="color: white;background-color: rgb(27, 158, 38);   ;padding: 4px;">Who is the
-                 Technology Training Portal
-                 For?</h3>
+             <h3 class="alike" style="color: white;background-color: rgb(27, 158, 38);   ;padding: 4px;">Untuk Siapa
+                 Portal Pelatihan Teknologi ?</h3>
 
              <div class="row">
                  <div class="col-lg-4 mt-5">

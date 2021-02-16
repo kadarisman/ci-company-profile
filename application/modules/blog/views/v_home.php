@@ -2,7 +2,7 @@
  <div class="container-fluid">
      <div class="row p-4 poppins">
          <div class="col-lg-6 col-sm-6 mt-md-4 mb-md-4 shadow p-3 mb-5 bg-white rounded ">
-             <h2 class="section-heading text-center alike">Stop Illegal Logging</h2>
+             <h2 class="section-heading text-center alike">Stop Penebangan Liar</h2>
              <p class="text-justify">
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quo sit corporis deleniti
                  repellendus nostrum corrupti error doloribus, ea minus ducimus alias pariatur eligendi numquam
@@ -17,7 +17,7 @@
              </p>
          </div>
          <div class="col-lg-6 col-sm-6 mt-md-4 mb-md-4 shadow p-3 mb-5 bg-white rounded ">
-             <h2 class="section-heading text-center alike">Stop Global Warming</h2>
+             <h2 class="section-heading text-center alike">Stop Pemanasan Global</h2>
              <p class="text-justify">
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quo sit corporis deleniti
                  repellendus nostrum corrupti error doloribus, ea minus ducimus alias pariatur eligendi numquam
@@ -38,12 +38,13 @@
      <div class="layer w-100">
          <div class="row">
              <div class="col-lg-12 col-sm-12 mt-md-4 mb-md-4 p-3 mb-5">
-                 <h2 class="section-heading text-center text-white alike">Why AGENT..??</h2>
+                 <h2 class="section-heading text-center text-white alike">Mengapa Harus AGENT..??</h2>
                  <p class="lead text-center poppins text-white">
                      Let’s Join us to do something awesome to Save Water, Energey, Control Pollution
                      & Environment, Wildlife, Forest Planting Implant for Solar System.
                  </p>
-                 <center><a class="btn btn-success btn-sm btn2" href="#" role="button">Sig In To Join Us</a></center>
+                 <center><a class="btn btn-success btn-sm btn2" href="#" role="button">Bergabung Dengan Kami</a>
+                 </center>
              </div>
          </div>
      </div>
@@ -53,7 +54,7 @@
      <div class="row p-4 poppins">
          <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded text-center">
              <img src="<?= base_url('assets/') ?>img/icon/sericon5.png" alt="">
-             <h3 class="section-heading text-center alike mt-3">Forest Planting</h3>
+             <h3 class="section-heading text-center alike mt-3">Penanaman Hutan</h3>
              <p>
                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, est. Eum doloribus fuga eveniet
                  illum quam nam expedita exercitationem neque sequi minima laborum odit voluptatum iusto culpa,
@@ -62,7 +63,7 @@
          </div>
          <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded text-center">
              <img src="<?= base_url('assets/') ?>img/icon/sericon1.png" alt="">
-             <h3 class="section-heading text-center alike mt-3">Recycling</h3>
+             <h3 class="section-heading text-center alike mt-3">Mendaur ulang</h3>
              <p>
                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, est. Eum doloribus fuga eveniet
                  illum quam nam expedita exercitationem neque sequi minima laborum odit voluptatum iusto culpa,
@@ -71,7 +72,7 @@
          </div>
          <div class="col-sm-4 shadow p-3 mb-5 bg-white rounded text-center">
              <img src="<?= base_url('assets/') ?>img/icon/sericon3.png" alt="">
-             <h3 class="section-heading text-center alike mt-3">Pure Water</h3>
+             <h3 class="section-heading text-center alike mt-3">Air murni</h3>
              <p>
                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, est. Eum doloribus fuga eveniet
                  illum quam nam expedita exercitationem neque sequi minima laborum odit voluptatum iusto culpa,

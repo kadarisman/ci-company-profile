@@ -71,7 +71,7 @@ class Auth extends CI_Controller
         $this->session->unset_userdata('email');
         $this->session->unset_userdata('level');
 
-        $this->session->set_flashdata('message1', '<div class="alert alert-success" role="alert" id="msg">Anda sudah log out</div>');
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert" id="msg">Anda sudah log out</div>');
         redirect('auth/Auth');
     }
 
@@ -110,7 +110,7 @@ class Auth extends CI_Controller
                 'nama' => htmlspecialchars($this->input->post('nama', true)),
                 'email' => htmlspecialchars($email),
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
-                'bidang_ilmu' => password_hash($this->input->post('bidang_ilmu'), PASSWORD_DEFAULT),
+                'bidang_ilmu' => password_hash($this->input->post('bidang_ilmu'), true),
                 'foto' => 'default.jpg',
                 'level' => 'user',
                 'is_active' => 0,

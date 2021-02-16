@@ -1,5 +1,5 @@
 <style>
-a {
+.a1 a {
     color: darkolivegreen;
     font-size: 14px;
 }
@@ -8,7 +8,7 @@ a:hover {
     color: rgb(27, 158, 38);
 }
 </style>
-<div class="container" style="margin-top: 80px;">
+<div class="container a1" style="margin-top: 80px;">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="<?= base_url('blog/Blog/Kursus') ?>">Semua kursus</a></li>
@@ -20,7 +20,7 @@ a:hover {
 
     <div class="row">
         <div class="col-md-12">
-            <h3 class="page-title poppins text-success">Courses</h3>
+            <h3 class="page-title poppins text-success">Kursus</h3>
         </div>
     </div>
 
@@ -29,7 +29,7 @@ a:hover {
         <div class="row">
             <div class="col-md-3 col-sm-4 w-filter-">
                 <div class="SearchBox-Title">
-                    <h5 class="alike bg-success text-white p-1">Filter learning courses</h5>
+                    <h5 class="alike bg-success text-white p-1">Filter kursus pembelajaran</h5>
                 </div>
                 <div class="SearchBox-Top">
                     <div class="input-group mb-3">
@@ -41,7 +41,7 @@ a:hover {
                     </div>
                 </div>
                 <div class="SearchBox-SubTitle">
-                    <strong>Order by</strong>
+                    <strong>Dipesan oleh</strong>
                 </div>
                 <div class="SearchBox-Bottom">
                     <ul>
@@ -52,7 +52,7 @@ a:hover {
                     </ul>
                 </div>
                 <div class="SearchBox-SubTitle">
-                    <strong>Filter by categories</strong>
+                    <strong>Filter menurut kategori</strong>
                 </div>
                 <div class="SearchBox-Bottom">
                     <ul>
@@ -64,7 +64,7 @@ a:hover {
                     </ul>
                 </div>
                 <div class="SearchBox-SubTitle">
-                    <strong>Filter by languages</strong>
+                    <strong>Filter menurut bahasa</strong>
                 </div>
                 <div class="SearchBox-Bottom">
                     <ul>
@@ -79,7 +79,7 @@ a:hover {
             </div>
 
             <div class="col-md-9 col-sm-8 w-course-search-list">
-                <span class="poppins">About 76 Results</span>
+                <span class="poppins">Sekitar 76 Hasil</span>
 
                 <hr>
                 <div class="w-course-list p-3 shadow p-3 mb-5 bg-white rounded">
@@ -94,7 +94,7 @@ a:hover {
                                 <div class="course-meta p-3">
                                     <h2>
                                         <a href="/thematicarea/detail?id=14" class="h2">ITIL 4 Managing Professional
-                                            Transition
+                                            Transisi
                                             (ITIL 4 MPT)</a>
                                     </h2>
                                     <p class="poppins">
@@ -168,7 +168,7 @@ a:hover {
                                 <div class="course-meta p-3">
                                     <h2>
                                         <a href="/thematicarea/detail?id=14" class="h2">ITIL 4 Managing Professional
-                                            Transition
+                                            Transisi
                                             (ITIL 4 MPT)</a>
                                     </h2>
                                     <p class="poppins">

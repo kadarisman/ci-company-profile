@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 14, 2021 at 07:07 AM
+-- Generation Time: Feb 16, 2021 at 08:08 AM
 -- Server version: 10.1.39-MariaDB
 -- PHP Version: 7.1.29
 
@@ -44,7 +44,11 @@ CREATE TABLE `nilai` (
 
 INSERT INTO `nilai` (`id`, `id_user`, `bidang_studi`, `mata_pelajaran`, `nilai`, `tanggal_lulus`, `keterangan`) VALUES
 (1, 2, 'Bidang studi 1', 'Mata Pelajaran 1', 9, '2021-02-04', 'hfghh'),
-(2, 2, 'Bidang studi 3', 'Mata Pelajaran 3', 7, '2021-02-26', 'mmmkmkmmk');
+(2, 2, 'Bidang studi 3', 'Mata Pelajaran 3', 7, '2021-02-26', 'mmmkmkmmk'),
+(3, 3, 'Bidang studi 4', 'Mata pelajaran 5', 7, '2021-02-26', 'nca,dscnfasnan'),
+(4, 3, 'Bidang studi 2', 'Mata Pelajaran 2', 7, '2021-02-26', 'daskd;afakfkd'),
+(5, 3, 'Bidang studi 2', 'Mata Pelajaran 3', 7, '2021-02-06', 'daskd;afakfkd'),
+(6, 3, 'Bidang studi 1', 'Mata Pelajaran 2', 7, '2021-02-26', 'mmmkmkmmk');
 
 -- --------------------------------------------------------
 
@@ -71,7 +75,7 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `nama`, `email`, `password`, `foto`, `level`, `is_active`, `date_created`, `bidang_ilmu`) VALUES
 (1, 'Admin satu', 'admin1@gmail.com', '$2y$10$NcQ1re5XpgMKeniDmEndiO553uPJdSUxNZ2jktSdkxopxEas5yWvK', 'default.jpg', 'admin', 1, 0, NULL),
 (2, 'User satu', 'user1@gmail.com', '$2y$10$cyXmYCZLh.EYARDP06krc.eClilsfDm8s7jKOVwP6nMLBWV7MFMYG', 'default.jpg', 'user', 1, 0, 'Bidang Ilmu satu'),
-(3, 'Kadarisman, S.Kom', 'fromzerocode@gmail.com', '$2y$10$k6QfJIHAL6SNZXMbMSJfLOJiNzDZNB.MxF0IOMfujUNht1ibSjZ/C', 'default.jpg', 'user', 1, 1613282422, '$2y$10$x2nGKw1vEWYgVxnq/bmCcuNjng6TfpwSZxYeecMHUN4CRQxzpMiRK');
+(3, 'Kadarisman, S.Kom', 'fromzerocode@gmail.com', '$2y$10$k6QfJIHAL6SNZXMbMSJfLOJiNzDZNB.MxF0IOMfujUNht1ibSjZ/C', 'default.jpg', 'user', 1, 1613282422, 'Bidang Ilmu dua');
 
 -- --------------------------------------------------------
 
@@ -116,7 +120,7 @@ ALTER TABLE `user_token`
 -- AUTO_INCREMENT for table `nilai`
 --
 ALTER TABLE `nilai`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user`
@@ -128,7 +132,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `user_token`
 --
 ALTER TABLE `user_token`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

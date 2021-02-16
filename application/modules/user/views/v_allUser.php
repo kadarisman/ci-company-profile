@@ -68,17 +68,17 @@
                 </div>
                 <div class="modal-body">
                     <form method="post" action="" class="item">
-                        <input type="text" class="form-control" name="id_user" value="<?= $usr->id ?>">
+                        <input type="hidden" class="form-control" name="id_user" value="<?= $usr->id ?>">
                         <div class="form-group">
                             <label>Bidang Studi</label>
                             <select class="form-control border border-dark" tabindex="-1" aria-hidden="true"
-                                name="bidang_studi">
+                                name="bidang_studi" id="bidang_studi">
                                 <option selected="true" disabled="disabled">Pilih</option>
                                 <option value="Bidang studi 1">Bidang studi 1</option>
                                 <option value="Bidang studi 2">Bidang studi 2</option>
                                 <option value="Bidang studi 3">Bidang studi 3</option>
                             </select>
-                            <span id="bidang_studi_error" class="text-danger"></span>
+                            <span name="bidang_studi_error" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label>Mata Pelajaran</label>
@@ -89,11 +89,11 @@
                                 <option value="Mata Pelajaran 2">Mata Pelajaran 2</option>
                                 <option value="Mata Pelajaran 3">Mata Pelajaran 3</option>
                             </select>
-                            <span id="mata_pelajaran_error" class="text-danger"></span>
+                            <span name="mata_pelajaran_error" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" name="nilai" placeholder="Nilai dalam angka">
-                            <span id="nilai_error" class="text-danger"></span>
+                            <span name="nilai_error" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label>Tanggal Lulus</label><br>
@@ -102,7 +102,7 @@
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Keteranagan</label>
                             <input type="text" class="form-control" name="keterangan" placeholder="Keteranagan">
-                            <span id="keterangan_error" class="text-danger"></span>
+                            <span name="keterangan_error" class="text-danger"></span>
                         </div>
                         <button type="submit" name="submit_input_nilai" class="badge badge-primary">Simpan</button>
                         <button type="button" class="badge badge-secondary" data-dismiss="modal">Batal</button>
@@ -113,6 +113,7 @@
     </div>
     <?php endforeach; ?>
 </div>
+
 
 <script src="<?= base_url('assets/') ?>js/jquery.min.js"></script>
 <script>
@@ -130,14 +131,14 @@ $(document).ready(function() {
                     location.href = "<?= base_url('user/Admin'); ?>"
 
                 } else {
-                    $("#bidang_studi_error").html(data.error.bidang_studi_error);
-                    $("#mata_pelajaran_error").html(data.error.mata_pelajaran_error);
-                    $("#nilai_error").html(data.error.nilai_error);
-                    $("#keterangan_error").html(data.error.keterangan_error);
+                    $('[name="bidang_studi_error"]').html(data.error.b_studi_error);
+                    $('[name="mata_pelajaran_error"]').html(data.error.m_pelajaran_error);
+                    $('[name="nilai_error"]').html(data.error.n_error);
+                    $('[name="keterangan_error"]').html(data.error.k_error);
                 }
             }
 
-        });
-    });
+        })
+    })
 })
 </script>
