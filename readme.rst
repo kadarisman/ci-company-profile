@@ -1,3 +1,27 @@
+Demo : https://try-project.000webhostapp.com/
+
+
+
+Admin :
+Email : admin1@gmail.com
+
+
+Pass  : admin1
+
+User : 
+
+Email : user1@gmail.com
+
+
+Pass  : 123
+
+Fitur:
+-Login / registet,
+-email verification,
+-Modal input and form validation server side inside modal,
+-dompdf and fpdf generate pdf file,
+-language change, in/eng
+
 ###################
 What is CodeIgniter
 ###################
